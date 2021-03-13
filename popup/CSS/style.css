@@ -1,0 +1,72 @@
+.popup__container {
+  width: 400px;
+}
+
+.popup-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: opensans-bold;
+  }
+  
+  .popup-title::after {
+    content: "";
+    display: flex;
+    width: 66px;
+    height: 3px;
+    margin-top: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e1d9bd;
+  }
+  
+  .survey-field {
+    width: 272px;
+    height: 48px;
+    box-sizing: border-box;
+    border: none;
+    padding: 10px 18px 10px 18px;
+    margin: 0;
+    display: inline-block;
+    font-size: 14px;
+    background-color: #f4f7f6;
+    background-image: url("MQ-DIPLOM/SVG/form-arrows.svg");
+  }
+
+  .survey-button {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: opensans-bold, Arial, sans-serif;
+    margin-top: 18px;
+    width: 272px;
+    height: 48px;
+    border: red;
+    color: white;
+    background-color: #b59f5b;
+    cursor: pointer;
+  }
+
+  .survey-label {
+    font-family: opensans-regular;
+  }
+
+  .popup-close {
+    width: 1.4em;
+    height: 1em;
+    font-size: 20px;
+  
+    position: absolute;
+    top: -1.5em;
+    right: 0;  
+  }
+  
+  .popup-close:before, .popup__close:after {
+    width: 1.4em;
+    height: 0.2em;
+  }
+  
+  @media (max-width: 481px) {
+    .popup-close {
+    width: 1.05em;
+    height: 0.75em;
+    }
+  }
