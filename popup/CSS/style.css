@@ -1,5 +1,19 @@
+@font-face {
+  font-family: opensans-regular;
+  src: url(/Users/nean/Desktop/MQ-Diplom/fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: opensans-bold;
+  src: url(/Users/nean/Desktop/MQ-Diplom/fonts/OpenSans-Bold.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
 .popup__container {
-  width: 400px;
+  width: 272px;
 }
 
 .popup-title {
@@ -29,7 +43,8 @@
     display: inline-block;
     font-size: 14px;
     background-color: #f4f7f6;
-    background-image: url("MQ-DIPLOM/SVG/form-arrows.svg");
+    background-image: url("/Users/nean/Desktop/MQ-Diplom/SVG/form-arrows.svg");
+    
   }
 
   .survey-button {
