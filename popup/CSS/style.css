@@ -19,7 +19,7 @@
 .popup-title {
     text-transform: uppercase;
     text-align: center;
-    font-family: opensans-bold;
+    font-family: opensans-bold, Arial, sans-serif;
   }
   
   .popup-title::after {
@@ -61,7 +61,7 @@
   }
 
   .survey-label {
-    font-family: opensans-regular;
+    font-family: opensans-regular, Arial, sans-serif;
   }
 
   .popup-close {

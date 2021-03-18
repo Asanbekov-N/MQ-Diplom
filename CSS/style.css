@@ -95,7 +95,7 @@ body {
   
   /* Шрифты */
   @font-face {
-    font-family: opensans-regular;
+    font-family: opensans-regular, Arial, sans-serif;
     src: url(/Users/nean/Desktop/MQ-Diplom/fonts/OpenSans-Regular.woff);
     font-weight: 400;
     font-style: normal;
@@ -119,50 +119,38 @@ body {
   }
 
   .trends-title {
-      font-family: opensans-bold;
-      text-align: center;
-      text-transform: uppercase;
+    font-family: opensans-bold, Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   .trends {
-      display: flex;
+    display: flex;
+  }
+
+  .trend {
+    background: url("images/trend1.jpg");
+    width: 410px;
+    height: 200px;
+    background-color: #961d1d;
   }
   
   .trend-list-item {
-      display: inline-block;
+    display: inline-block;
   }
 
   .trend-title-link {
-      font-size: 20px;
-      font-family: opensans-bold, Arial, sans-serif;
-      color: #ffffff;
-      text-transform: uppercase;
-      text-decoration: none;
-  }
-
-  .trend-img-box {
-      width: 410px;
-      position: relative;
-      z-index: 1;
-  }
-
-  .trend-img-box::after {
-      background-color: #000000;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      opacity: 0.47;
-      content: "";
+    font-size: 20px;
+    font-family: opensans-bold, Arial, sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
   }
 
   .trend-info {
-      width: 400px;
-      position: absolute;
-      bottom: 0;
-      border: 2px solid #b59f5b;
-      z-index: 3;
+    border: 2px solid #b59f5b;
+    z-index: 3;
+    width: 400px;
   }
 
   .content-field {
@@ -499,47 +487,65 @@ body {
   }
   
   .products {
-      display: flex;
+    display: flex;
   }
 
   .product {
-      border: 3px solid #b59f5b;
+    width: calc(100% / 3);
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+  }
+
+  .product-body {
+    width: 300px;
+    position: relative;
+  }
+
+  .product::before {
+    content: " ";
+    position: absolute;
+    top: 170px;
+    left: 0;
+    width: 340px;
+    height: 250px;
+    border: 3px solid #b59f5b;
   }
 
   .product-title {
-      font-family: opensans-bold;
-      text-transform: uppercase;
+    text-transform: uppercase;
+    font-family: opensans-bold, Arial, sans-serif;
   }
 
   .product-text-link {
-      text-decoration: none;
-      color: #b59f5b;
-      font-family: opensans-regular;
+    color: #b59f5b;
+    text-decoration: none;
+    font-family: opensans-regular, Arial, sans-serif;
   }
 
   .old-price {
-      text-decoration: line-through;
+    text-decoration: line-through;
   }
 
   .product-prices {
-      display: flex;
-      flex-direction: column;
-      font-family: opensans-bold;
+    flex-direction: column;
+    display: flex;
+    font-family: opensans-bold, Arial, sans-serif;
   }
 
   .product-button {
-      background-color: #b59f5b;
-      font-family: opensans-bold;
-      border: none;
-      width: 140px;
-      height: 50px;
-      text-transform: uppercase;
-      color: #ffffff;
+    font-family: opensans-bold, Arial, sans-serif;
+    border: none;
+    width: 140px;
+    height: 50px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #b59f5b;
   }
 
   .product-footer {
-      display: flex;
-      justify-content: space-between;
+    justify-content: space-between;
+    display: flex;
   }
 
   .footer {
