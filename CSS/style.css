@@ -77,7 +77,7 @@
   
   .menu-link {
     font-family: opensans-regular, Arial, sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     color: #d9d9d8;
     text-decoration: none;
     text-transform: uppercase;
@@ -578,6 +578,9 @@
     text-transform: uppercase;
     color: #ffffff;
     background-color: #b59f5b;
+  }
+  .product-button:hover {
+    background-color: #323232;
   }
 
   .product-footer {
