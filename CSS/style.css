@@ -1,17 +1,31 @@
-body {
-    margin: 0;
+  /* Шрифты */
+  @font-face {
+    font-family: opensans-regular, Arial, sans-serif;
+    src: url(../fonts/OpenSans-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
   }
   
+  @font-face {
+    font-family: opensans-bold;
+    src: url(../fonts/OpenSans-Bold.woff);
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  body {
+    margin: 0;
+  }
+  /* БЛОК Шапка сайта */
   .header {
     width: 100%;
     height: 100%;
     position: relative;
     background-size: cover;
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+    background-image: url("../images/banner-bg.jpg");
     background-repeat: no-repeat;
     background-color: #666666;
   }
-  
   .header::after {
     content: "";
     background-color: #000000;
@@ -57,7 +71,6 @@ body {
   .menu-list-item {
     display: inline-block;
   }
-  
   .menu-list-item:nth-child(n + 2) {
     margin-left: 33px;
   }
@@ -69,7 +82,6 @@ body {
     text-decoration: none;
     text-transform: uppercase;
   }
-  
   .menu-link:hover {
     color: #ffffff;
     border-bottom: 1px solid #ffffff;
@@ -92,20 +104,76 @@ body {
     text-align: center;
     padding: 40px 15px 94px 15px;
   }
-  
-  /* Шрифты */
-  @font-face {
-    font-family: opensans-regular, Arial, sans-serif;
-    src: url(/Users/nean/Desktop/MQ-Diplom/fonts/OpenSans-Regular.woff);
-    font-weight: 400;
-    font-style: normal;
+
+  /* БЛОК сейчас в тренде */
+  .trends-container {
+    margin-top: 64px;
+  }
+
+  .trends-title {
+    font-family: opensans-bold, Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .trends {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .trend {
+    width: 410px;
+    height: 320px;
+    background-color: #eff6f1;
+    position: relative;
+  }
+  .trend::after {
+    content: "";
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.47;
+  }
+
+  .block-cheese {
+    background: url(../images/trend2.jpg);
   }
   
-  @font-face {
-    font-family: opensans-bold;
-    src: url(/Users/nean/Desktop/MQ-Diplom/fonts/OpenSans-Bold.woff);
-    font-weight: 400;
-    font-style: normal;
+  .block-garden {
+    background-image: url(../images/trend1.jpg);
+  }
+
+  .block-travel {
+    background-image: url(../images/trend3.jpg)
+  }
+
+  .block-health {
+    background-image: url(../images/trend4.jpg)
+  }
+
+  .trend-info {
+    position: relative;
+    box-sizing: border-box;
+    width: 370px;
+    margin: 80px 20px 20px 20px;
+    padding: 38px 45px 38px 34px;
+    border: 2px solid #b59f5b;
+    z-index: 10;
+  }
+
+  .trend-list-item {
+    display: inline-block;
+  }
+
+  .trend-title-link {
+    font-size: 20px;
+    font-family: opensans-bold, Arial, sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
   }
   
   .container {
@@ -118,63 +186,28 @@ body {
     margin-right: auto;
   }
 
-  .trends-title {
-    font-family: opensans-bold, Arial, sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  .trends {
-    display: flex;
-  }
-
-  .trend {
-    background: url("images/trend1.jpg");
-    width: 410px;
-    height: 200px;
-    background-color: #961d1d;
-  }
-  
-  .trend-list-item {
-    display: inline-block;
-  }
-
-  .trend-title-link {
-    font-size: 20px;
-    font-family: opensans-bold, Arial, sans-serif;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-
-  .trend-info {
-    border: 2px solid #b59f5b;
-    z-index: 3;
-    width: 400px;
-  }
-
   .content-field {
     display: flex;
   }
   
-  .post {
-    display: flex;
-  }
-  
+  /* БЛОК посты */
   .post-lists {
     width: 880px;
     display: flex;
     flex-direction: column;
+  }
+
+  .post {
+    display: flex;
+  }
+  .post:nth-child(n + 2) {
+    margin-top: 58px;
   }
   
   .post-preview {
     width: 381px;
     height: 294px;
     background-color: #eff6f1;
-  }
-  
-  .post:nth-child(n + 2) {
-    margin-top: 58px;
   }
   
   .post-info {
@@ -192,11 +225,10 @@ body {
     display: inline-block;
     list-style-type: none;
   }
-  
   .post-list-item:nth-child(n + 2) {
     margin-left: 19px;
   }
-  
+
   .tag_links {
     font-size: 14px;
     font-family: opensans-bold, Arial, sans-serif;
@@ -205,7 +237,6 @@ body {
     color: #b59f5b;
     text-decoration: none;
   }
-  
   .tag_links:hover {
     border-bottom: 1px solid #b59f5b;
   }
@@ -222,13 +253,19 @@ body {
     text-transform: uppercase;
     text-decoration: none;
   }
-  
   .post-title-link:hover {
     color: #b59f5b;
   }
   
   .date-author {
     display: flex;
+  }
+
+  .post-date {
+    color: #888888;
+    font-size: 12px;
+    font-family: opensans-regular, Arial, sans-serif;
+    line-height: 3.33;
   }
   
   .post-author {
@@ -240,19 +277,13 @@ body {
     font-style: normal;
   }
   
-  .post-date {
-    color: #888888;
-    font-size: 12px;
-    font-family: opensans-regular, Arial, sans-serif;
-    line-height: 3.33;
-  }
-  
   .post-text {
     font-family: opensans-regular, Arial, sans-serif;
     font-size: 15px;
     line-height: 1.46;
   }
-  
+
+  /* БЛОК сайдбар */
   .sidebar {
     width: 272px;
     display: flex;
@@ -283,7 +314,6 @@ body {
   .latest-post {
     display: flex;
   }
-  
   .latest-post:nth-child(n + 3) {
     margin-top: 21px;
   }
@@ -310,7 +340,6 @@ body {
   .latest-title {
     margin: 0;
   }
-  
   .latest-title-link {
     display: block;
     font-size: 14px;
@@ -320,11 +349,11 @@ body {
     text-decoration: none;
     color: #000000;
   }
-  
   .latest-title-link:hover {
     color: #b59f5b;
   }
   
+  /* БЛОК поисковик */
   .search {
     display: flex;
     margin-top: 58px;
@@ -343,25 +372,24 @@ body {
     height: 48px;
     background-color: #f4f7f6;
   }
-  
   .search-field:focus {
     outline: none;
     border: 1px solid #b59f5b;
   }
   
-  .button {
+  .search-button {
     display: block;
     background-color: #b59f5b;
     width: 48px;
     height: 48px;
     border: none;
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/search.svg");
+    background-image: url("../SVG/search.svg");
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: center;
   }
   
-  .button:hover {
+  .search-button:hover {
     background-color: #323232;
   }
   
@@ -372,6 +400,7 @@ body {
     position: absolute;
   }
   
+  /* БЛОК подписки */
   .subscribe-container {
     margin-bottom: 60px;
   }
@@ -388,13 +417,12 @@ body {
     background-color: #f4f7f6;
     background-position: left 20px center;
   }
-  
   .subscribe-field:focus {
     outline: none;
     border: 1px solid #b59f5b;
   }
   
-  .submit {
+  .subscribe-submit {
     text-transform: uppercase;
     font-size: 14px;
     font-family: opensans-bold, Arial, sans-serif;
@@ -406,11 +434,11 @@ body {
     background-color: #b59f5b;
     cursor: pointer;
   }
-  
-  .submit:hover {
+  .subscribe-submit:hover {
     background-color: #323232;
   }
   
+  /* БЛОК теги */
   .tags-container {
     width: 272px;
     margin-bottom: 60px;
@@ -425,11 +453,9 @@ body {
   .tag-list-item {
     list-style-type: none;
   }
-  
   .tag-list-item:nth-child(n + 1) {
     margin-right: 5px;
   }
-  
   .tag-list-item:nth-child(n + 4) {
     margin-top: 5px;
   }
@@ -444,12 +470,12 @@ body {
     text-decoration: none;
     text-transform: uppercase;
   }
-  
   .tag-link:hover {
     border: 3px solid #b59f5b;
     color: #000000;
   }
   
+  /* БЛОК темы */
   .categores-container {
     padding-left: 0;
     margin-bottom: 60px;
@@ -472,7 +498,6 @@ body {
     font-size: 14px;
     text-decoration: none;
   }
-  
   .categore-link:hover {
     color: #b59f5b;
   }
@@ -486,33 +511,40 @@ body {
     vertical-align: super;
   }
   
+  /* БЛОК наши изделья */
+  .products-container {
+    margin-top: 64px;
+  }
+
   .products {
     display: flex;
+    justify-content: space-between;
   }
 
   .product {
-    width: calc(100% / 3);
+    width: 300px;
     padding-left: 20px;
     padding-right: 20px;
     position: relative;
   }
-
-  .product-body {
-    width: 300px;
-    position: relative;
-  }
-
   .product::before {
     content: " ";
     position: absolute;
     top: 170px;
     left: 0;
-    width: 340px;
+    width: 100%;
     height: 250px;
     border: 3px solid #b59f5b;
   }
 
+  .product-body {
+    width: 100%;
+    position: relative;
+    font-family: opensans-regular, Arial, sans-serif;
+  }
+
   .product-title {
+    margin-bottom: 5px;
     text-transform: uppercase;
     font-family: opensans-bold, Arial, sans-serif;
   }
@@ -525,6 +557,11 @@ body {
 
   .old-price {
     text-decoration: line-through;
+    font-family: opensans-bold, Arial, sans-serif;
+  }
+
+  p {
+    margin-top: 0;
   }
 
   .product-prices {
@@ -548,6 +585,7 @@ body {
     display: flex;
   }
 
+  /*БЛОК подвал сайта*/
   .footer {
     width: 1200px;
   }
@@ -581,23 +619,23 @@ body {
   }
   
   .social-link-twitter {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg");
+    background-image: url("../SVG/004-twitter.svg");
   }
   
   .social-link-pinterest {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg");
+    background-image: url("../SVG/001-pinterest.svg");
   }
   
   .social-link-facebook {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg");
+    background-image: url("../SVG/002-facebook-logo.svg");
   }
   
   .social-link-instagram {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg");
+    background-image: url("../SVG/005-instagram.svg");
   }
   
   .social-link-tumblr {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
+    background-image: url("../SVG/003-tumblr.svg");
   }
   
   .social-link-text {
