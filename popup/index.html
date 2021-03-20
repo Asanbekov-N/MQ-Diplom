@@ -15,14 +15,19 @@
               <h3 class="popup-title">Ваш фидбек</h3>
             </div>
             <label class="survey-label" for="survey">Как часто вы заходите на сайт?</label>
-            <input id="survey" class="survey-field" placeholder="Почти каждый день" name="username" required>
+            <select class="select">
+              <option value="every-day" selected>Почти каждый день</option>
+              <option value="day">Раз в несколько дней</option>
+              <option value="week">Раз в несколько недель</option>
+              <option value="year">Несколько раз год</option>
+            </select>
             <label class="checkbox-group">
               <span class="checkbox-text">Вы подписаны на e-mail рассылка?</span>
-             <input type="radio" class="field" placeholder="" name="username" required>
-             <input type="radio" class="field" placeholder="" name="username" required>
+             <input type="radio" class="field" placeholder="" name="username" required> Да
+             <input type="radio" class="field" placeholder="" name="username" required> Нет
             </label>
             <label class="survey-label" for="survey-text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
-            <input id="survey" class="survey-field" placeholder="" name="username" required>
+            <input id="survey" class="input-field" placeholder="" name="username" required>
             <div>
               <button class="survey-button"><span class="sign-up__button-label">Отправить</span></button>
             </div>

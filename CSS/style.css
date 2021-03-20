@@ -122,6 +122,8 @@
   }
 
   .trend {
+    display: flex;
+    align-items: flex-end;
     width: 410px;
     height: 320px;
     background-color: #eff6f1;
@@ -135,11 +137,12 @@
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.47;
+    opacity: 0.60;
   }
 
   .block-cheese {
     background: url(../images/trend2.jpg);
+    background-size: cover;
   }
   
   .block-garden {
@@ -155,17 +158,28 @@
   }
 
   .trend-info {
+    align-items: flex-end;
     position: relative;
     box-sizing: border-box;
     width: 370px;
-    margin: 80px 20px 20px 20px;
-    padding: 38px 45px 38px 34px;
-    border: 2px solid #b59f5b;
-    z-index: 10;
+    margin: 20px 20px 20px 20px;
+    padding: 0px 0px 38px 30px;
+    border: 3px solid #b59f5b;
+    opacity: 0.89;
+    z-index: 9;
+  }
+
+  .trend-list {
+    padding-left: 0;
   }
 
   .trend-list-item {
     display: inline-block;
+  }
+
+  .trend-title {
+    margin-bottom: 0;
+    margin-top: 0;
   }
 
   .trend-title-link {
@@ -174,6 +188,7 @@
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
+    
   }
   
   .container {
@@ -525,21 +540,12 @@
     width: 300px;
     padding-left: 20px;
     padding-right: 20px;
-    position: relative;
-  }
-  .product::before {
-    content: " ";
-    position: absolute;
-    top: 170px;
-    left: 0;
-    width: 100%;
-    height: 250px;
-    border: 3px solid #b59f5b;
   }
 
   .product-body {
-    width: 100%;
-    position: relative;
+    outline: 3px solid #b59f5b;
+    outline-offset: 54px;
+    margin-left: 30px;
     font-family: opensans-regular, Arial, sans-serif;
   }
 
@@ -554,10 +560,19 @@
     text-decoration: none;
     font-family: opensans-regular, Arial, sans-serif;
   }
+  .product-text-link:hover {
+    border-bottom: 1px solid #b59f5b;
+  }
+
+  .product-price {
+    font-family: opensans-bold;
+    font-size: 20px;
+  }
 
   .old-price {
     text-decoration: line-through;
     font-family: opensans-bold, Arial, sans-serif;
+    font-size: 14px;
   }
 
   p {
@@ -577,6 +592,7 @@
     height: 50px;
     text-transform: uppercase;
     color: #ffffff;
+    font-size: 14px;
     background-color: #b59f5b;
   }
   .product-button:hover {
