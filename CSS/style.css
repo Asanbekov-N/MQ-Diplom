@@ -142,6 +142,9 @@ input {
 .trend-list-item {
   display: inline-block;
 }
+.trend-list-item:nth-child(n + 2) {
+  margin-left: 19px;
+}
 
 .trend-title-link {
   font-family: opensans-bold, Arial, sans-serif;
