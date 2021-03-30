@@ -21,7 +21,6 @@ html {
 }
 input {
   -webkit-appearance: none;
-  -webkit-border-radius: 0;
 }
 
 /* БЛОК Шапка сайта */
@@ -160,7 +159,7 @@ input {
   box-sizing: border-box;
   margin: 60px 20px 20px 20px;
   padding: 0px 0px 38px 30px;
-  border: 3px solid #b59f5b;
+  border: 2px solid #b59f5b;
   opacity: 0.89;
   z-index: 9;
 }
@@ -445,7 +444,7 @@ input {
 }
 
 .tag-link {
-  border: 3px solid #eeeeee;
+  border: 2px solid #eeeeee;
   padding: 5px 14px 5px 14px;
   display: block;
   color: #000000;
@@ -500,16 +499,12 @@ input {
   flex-direction: column;
 }
 
-
 .product-body {
   margin-top: -35px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 20px;
-  padding-top: 30px;
   margin-left: -20px;
   margin-right: -20px;
-  border: 3px solid #b59f5b;
+  padding: 30px 18px 20px;
+  border: 2px solid #b59f5b;
   font-family: opensans-regular, Arial, sans-serif;
   flex-grow: 1;
 }
@@ -691,13 +686,16 @@ input {
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
+  .trends-container, .content-field, .categores-container, 
+  .products-container, .footer {
+    margin-top: 50px;
+  }
   .header {
     background-image: url("../images/banner-bg-tablet.jpg");
   }
 
   .header-container {
     margin: 0 20px;
-    padding-top: 32px;
     justify-content: space-between;
   }
 
@@ -732,7 +730,6 @@ input {
   }
 
   .post {
-    margin-top: 34px;
     border-bottom: 2px solid #eeeeee;
   }
 
@@ -783,12 +780,13 @@ input {
   .product {
     width: 46%;
   }
-  .product:nth-child(n + 3) {
-    margin-top: 30px;
-  }
 
   .product-img {
     width: 100%;
+  }
+
+  .product:nth-child(n + 3) {
+    margin-top: 28px;
   }
 }
 
