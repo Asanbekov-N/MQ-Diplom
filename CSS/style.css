@@ -316,9 +316,6 @@ input {
   margin-top: 21px;
 }
 
-.latest-preview {
-}
-
 .latest-img {
   width: 70px;
   height: 70px;
@@ -494,18 +491,25 @@ input {
 }
 
 /* БЛОК наши изделья */
+.products {
+  padding: 20px;
+}
+
 .product {
-  width: 300px;
   display: flex;
   flex-direction: column;
 }
 
+
 .product-body {
-  box-sizing: border-box;
-  margin-right: 20px;
-  margin-left: 20px;
-  outline: 3px solid #b59f5b;
-  outline-offset: 35px;
+  margin-top: -35px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  margin-left: -20px;
+  margin-right: -20px;
+  border: 3px solid #b59f5b;
   font-family: opensans-regular, Arial, sans-serif;
   flex-grow: 1;
 }
@@ -676,6 +680,10 @@ input {
     width: 100%;
   }
 
+  .product-img {
+    width: 100%;
+  }
+
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
@@ -684,6 +692,7 @@ input {
   }
 
   .header-container {
+    margin: 0 20px;
     padding-top: 32px;
     justify-content: space-between;
   }
@@ -703,8 +712,14 @@ input {
   }
 
   .trend {
-    width: 50%;
+    width: 49.8%;
     height: 320px;
+  }
+  .trend:nth-child(2n - 1) {
+    margin-bottom: 3px;
+  }
+  .trend:nth-child(2n + 1) {
+    margin-right: 3px;
   }
 
   .trend-info {
@@ -712,8 +727,17 @@ input {
     padding: 0px 0px 38px 30px;
   }
 
+  .post {
+    margin-top: 34px;
+    border-bottom: 2px solid #eeeeee;
+  }
+
   .post-img {
     width: 100%;
+  }
+
+  .container {
+    margin: 0 20px;
   }
 
   .content-field {
@@ -750,11 +774,17 @@ input {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
   }
 
   .product {
-    width: 50%;
+    width: 46%;
+  }
+  .product:nth-child(n + 3) {
+    margin-top: 30px;
+  }
+
+  .product-img {
+    width: 100%;
   }
 }
 
@@ -797,7 +827,7 @@ input {
 
   .menu-link {
     font-family: opensans-regular, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     color: #d9d9d8;
     text-decoration: none;
     text-transform: uppercase;
@@ -940,6 +970,13 @@ input {
   .products {
     display: flex;
     justify-content: space-between;
+  }
+
+  .product {
+    width: 300px;
+  }
+  .product:nth-child(n + 2) {
+    margin-top: 30px;
   }
 }
 
