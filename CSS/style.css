@@ -684,6 +684,10 @@ input {
     width: 100%;
   }
 
+  .product:nth-child(n + 2) {
+    margin-top: 30px;
+  }
+
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
@@ -974,9 +978,6 @@ input {
 
   .product {
     width: 300px;
-  }
-  .product:nth-child(n + 2) {
-    margin-top: 30px;
   }
 }
 
