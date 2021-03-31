@@ -683,6 +683,7 @@ input {
     margin-top: 30px;
   }
 
+<<<<<<< HEAD
 }
 
 @media (orientation: landscape) and (max-width: 640px) {
@@ -702,6 +703,8 @@ input {
   .trend:nth-child(2n + 1) {
     margin-right: 3px;
   }
+=======
+>>>>>>> 35e4781ae5269f37cb7629f32d914a8f87c04ce9
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
@@ -812,6 +815,7 @@ input {
 
   .product:nth-child(n + 3) {
     margin-top: 28px;
+<<<<<<< HEAD
   }
 }
 
@@ -828,6 +832,8 @@ input {
   }
   .trend:nth-child(n + 2) {
     margin-right: 3px;
+=======
+>>>>>>> 35e4781ae5269f37cb7629f32d914a8f87c04ce9
   }
 }
 
