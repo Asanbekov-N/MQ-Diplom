@@ -728,7 +728,7 @@ input {
   .welcome-title {
     line-height: 1.37;
     font-size: 40px;
-    padding: 30px 15px 230px 15px;
+    padding: 100px 42px 100px 42px;
   }
 
   .trends {
@@ -764,6 +764,9 @@ input {
 
   .post {
     border-bottom: 2px solid #eeeeee;
+  }
+  .post:nth-child(n + 2) {
+    margin-top: 40px;
   }
 
   .post-title-link {
