@@ -684,7 +684,7 @@ input {
     margin-top: 30px;
   }
 }
-/*
+
 @media (orientation: landscape) and (max-width: 750px) {
   .trends {
     display: flex;
@@ -703,7 +703,7 @@ input {
     margin-right: 3px;
   }
 }
-*/
+
 @media (min-width: 641px) and (max-width: 1199px) {
   .trends-container, .content-field, .categores-container, 
   .products-container, .footer {
@@ -752,7 +752,7 @@ input {
 
   .trend {
     width: 49.7%;
-    height: 247px;
+    min-height: 247px;
   }
   .trend:nth-child(2n - 1) {
     margin-bottom: 3px;
@@ -762,8 +762,8 @@ input {
   }
 
   .trend-info {
-    margin: 20px 20px 20px 20px;
-    padding: 30px 15px 30px 30px;
+    margin: 18px;
+    padding: 0px 10px 15px 20px;
   }
 
   .post {
@@ -846,8 +846,8 @@ input {
     margin-top: 28px;
   }
 }
-/*
-@media (orientation: landscape) and (min-width: 750px) and (max-width: 1199px) {
+
+@media (orientation: landscape) and (min-width: 900px) and (max-width: 1199px) {
   .trends {
     display: flex;
     width: 100%;
@@ -862,7 +862,7 @@ input {
     margin-right: 3px;
   }
 }
-*/
+
 @media (min-width: 1200px) {
   .header {
     background-image: url("../images/banner-bg.jpg");
