@@ -737,6 +737,15 @@ input {
     flex-wrap: wrap;
   }
 
+  .title_decorline-big {
+    font-size: 18px;
+  }
+
+  .trend-title-link {
+    font-size: 17px;
+    line-height: 1.29;
+  }
+
   .trend {
     width: 49.8%;
     height: 320px;
@@ -755,6 +764,15 @@ input {
 
   .post {
     border-bottom: 2px solid #eeeeee;
+  }
+
+  .post-title-link {
+    font-size: 17px;
+  }
+
+  .post-text {
+    font-size: 15px;
+    line-height: 1.46;
   }
 
   .post-img {
@@ -781,6 +799,14 @@ input {
     display: flex;
     flex-direction: column;
     margin-left: 30px;
+  }
+
+  .sidebar-caption-title {
+    font-size: 14px;
+  }
+
+  .latest-title-link {
+    font-size: 12px;
   }
 
   .search-group {
@@ -992,6 +1018,10 @@ input {
     padding-right: 1px;
   }
 
+  .latest-title-link {
+    font-size: 14px;
+  }
+
   .search {
     margin-top: 58px;
     margin-bottom: 62px;
@@ -1016,6 +1046,10 @@ input {
 
   .product {
     width: 300px;
+  }
+
+  .product-title {
+    font-size: 20px;
   }
 }
 
