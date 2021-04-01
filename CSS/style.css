@@ -727,6 +727,9 @@ input {
   }
 
   .welcome-title {
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 1.37;
     font-size: 40px;
     padding: 100px 42px 100px 42px;
