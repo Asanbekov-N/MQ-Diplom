@@ -460,7 +460,7 @@ input {
   text-transform: uppercase;
 }
 .tag-link:hover {
-  border: 3px solid #b59f5b;
+  border: 2px solid #b59f5b;
   color: #000000;
 }
 
@@ -759,11 +759,11 @@ input {
     width: 49.7%;
     min-height: 247px;
   }
-  .trend:nth-child(2n - 1) {
-    margin-bottom: 3px;
+  .trend:nth-child(n - 2) {
+    margin-bottom: 2px;
   }
   .trend:nth-child(2n + 1) {
-    margin-right: 3px;
+    margin-right: 2px;
   }
 
   .trend-info {
