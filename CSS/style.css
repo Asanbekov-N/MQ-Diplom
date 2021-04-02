@@ -237,6 +237,11 @@ input {
   background-color: #eff6f1;
 }
 
+.post-preview {
+  width: 100%;
+  background-color: #eff6f1;
+}
+
 .post-list {
   padding: 0;
   margin-top: 0;
@@ -981,6 +986,7 @@ input {
   .post-preview {
     width: 381px;
     height: 294px;
+    background-color: #eff6f1;
   }
 
   .post-info {
