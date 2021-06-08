@@ -12,12 +12,12 @@
   font-weight: 400;
   font-style: normal;
 }
-
-body {
-  margin: 0;
-}
 html {
   margin: 0;
+}
+body {
+  margin: 0;
+  min-width: 320px;
 }
 input {
   -webkit-appearance: none;
@@ -108,7 +108,6 @@ input {
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
-  line-height: 2.58;
   font-size: 26px;
   padding: 0 15px 230px 15px;
 }
@@ -137,6 +136,7 @@ input {
 }
 
 .trend {
+  min-height: 232px;
   display: flex;
   align-items: flex-end;
   background-color: #eff6f1;
@@ -154,11 +154,12 @@ input {
 }
 
 .trend-info {
+  width: 100%;
   align-items: flex-end;
   position: relative;
   box-sizing: border-box;
-  margin: 60px 20px 20px 20px;
-  padding: 0px 0px 38px 30px;
+  margin: 20px 20px 20px 20px;
+  padding: 30px 38px 38px 30px;
   border: 2px solid #b59f5b;
   opacity: 0.89;
   z-index: 9;
@@ -181,7 +182,7 @@ input {
 }
 
 .trend-title-link {
-  font-size: 14px;
+  font-size: 16px;
   font-family: opensans-bold, Arial, sans-serif;
   color: #ffffff;
   text-transform: uppercase;
@@ -233,6 +234,11 @@ input {
 
 /* БЛОК посты */
 .post-img {
+  background-color: #eff6f1;
+}
+
+.post-preview {
+  width: 100%;
   background-color: #eff6f1;
 }
 
@@ -454,7 +460,7 @@ input {
   text-transform: uppercase;
 }
 .tag-link:hover {
-  border: 3px solid #b59f5b;
+  border: 2px solid #b59f5b;
   color: #000000;
 }
 
@@ -682,11 +688,9 @@ input {
   .product:nth-child(n + 2) {
     margin-top: 30px;
   }
-
-<<<<<<< HEAD
 }
 
-@media (orientation: landscape) and (max-width: 640px) {
+@media (orientation: landscape) and (max-width: 750px) {
   .trends {
     display: flex;
     width: 100%;
@@ -694,8 +698,8 @@ input {
   }
 
   .trend {
-    width: 49.5%;
-    height: 320px;
+    width: 48%;
+    height: 232px;
   }
   .trend:nth-child(2n - 1) {
     margin-bottom: 3px;
@@ -703,8 +707,6 @@ input {
   .trend:nth-child(2n + 1) {
     margin-right: 3px;
   }
-=======
->>>>>>> 35e4781ae5269f37cb7629f32d914a8f87c04ce9
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
@@ -730,9 +732,12 @@ input {
   }
 
   .welcome-title {
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 1.37;
     font-size: 40px;
-    padding: 30px 15px 230px 15px;
+    padding: 100px 42px 100px 42px;
   }
 
   .trends {
@@ -741,24 +746,45 @@ input {
     flex-wrap: wrap;
   }
 
-  .trend {
-    width: 49.8%;
-    height: 320px;
+  .title_decorline-big {
+    font-size: 18px;
   }
-  .trend:nth-child(2n - 1) {
-    margin-bottom: 3px;
+
+  .trend-title-link {
+    font-size: 17px;
+    line-height: 1.29;
+  }
+
+  .trend {
+    width: 49.7%;
+    min-height: 247px;
+  }
+  .trend:nth-child(n - 2) {
+    margin-bottom: 2px;
   }
   .trend:nth-child(2n + 1) {
-    margin-right: 3px;
+    margin-right: 2px;
   }
 
   .trend-info {
-    margin: 20px 20px 20px 20px;
-    padding: 0px 0px 38px 30px;
+    margin: 18px;
+    padding: 0px 10px 15px 20px;
   }
 
   .post {
     border-bottom: 2px solid #eeeeee;
+  }
+  .post:nth-child(n + 2) {
+    margin-top: 40px;
+  }
+
+  .post-title-link {
+    font-size: 17px;
+  }
+
+  .post-text {
+    font-size: 15px;
+    line-height: 1.46;
   }
 
   .post-img {
@@ -785,6 +811,14 @@ input {
     display: flex;
     flex-direction: column;
     margin-left: 30px;
+  }
+
+  .sidebar-caption-title {
+    font-size: 14px;
+  }
+
+  .latest-title-link {
+    font-size: 12px;
   }
 
   .search-group {
@@ -815,11 +849,10 @@ input {
 
   .product:nth-child(n + 3) {
     margin-top: 28px;
-<<<<<<< HEAD
   }
 }
 
-@media (orientation: landscape) and (max-width: 1199px) {
+@media (orientation: landscape) and (min-width: 900px) and (max-width: 1199px) {
   .trends {
     display: flex;
     width: 100%;
@@ -828,12 +861,10 @@ input {
 
   .trend {
     width: clac(99% / 4);
-    height: 320px;
+    height: 247px;
   }
   .trend:nth-child(n + 2) {
     margin-right: 3px;
-=======
->>>>>>> 35e4781ae5269f37cb7629f32d914a8f87c04ce9
   }
 }
 
@@ -909,6 +940,7 @@ input {
 
   .trend {
     width: 25%;
+    height: 320px;
   }
   .trend:nth-child(2n + 2),
   .trend:nth-child(5n + 3) {
@@ -921,7 +953,7 @@ input {
 
   .trend-info {
     margin: 0px 20px 20px 20px;
-    padding: 0px 0px 38px 30px;
+    padding: 30px 20px 30px 30px;
   }
 
   .trend-title-link {
@@ -954,6 +986,7 @@ input {
   .post-preview {
     width: 381px;
     height: 294px;
+    background-color: #eff6f1;
   }
 
   .post-info {
@@ -999,6 +1032,10 @@ input {
     padding-right: 1px;
   }
 
+  .latest-title-link {
+    font-size: 14px;
+  }
+
   .search {
     margin-top: 58px;
     margin-bottom: 62px;
@@ -1023,6 +1060,10 @@ input {
 
   .product {
     width: 300px;
+  }
+
+  .product-title {
+    font-size: 20px;
   }
 }
 
@@ -1199,6 +1240,7 @@ input {
   right: 0;
   z-index: 999;
 }
+
 .popup_buttontext {
   width: 1px;
   height: 1px;
